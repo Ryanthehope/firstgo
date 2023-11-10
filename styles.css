@@ -10,7 +10,7 @@ body {
     height: auto;
 }
 
-.header {
+.topbar {
     background-color: #333333;
     font-size: 120%;
     color: #fefefe;
@@ -18,7 +18,7 @@ body {
     border-width: 3px;
 }
 
-.header a:hover {
+.topbar a:hover {
     color: #ff0000;
 }
 
