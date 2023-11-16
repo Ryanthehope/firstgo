@@ -1,65 +1,88 @@
 /*  */
 
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    color: #333333;
-    font-family: Times, "Times New Roman", Georgia, serif ;
-    width: 1024px;
-    height: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #333333;
+  font-family: Times, "Times New Roman", Georgia, serif;
+  width: 1024px;
+  height: auto;
+}
+
+/* UTILITY STYLES */
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.current {
+  border-bottom: 3px solid #ff0000;
+  border
 }
 
 .topbar {
-    background-color: #333333;
-    font-size: 120%;
-    color: #fefefe;
-    border-style: solid;
-    border-width: 3px;
+  background-color: #333333;
+  color: #fefefe; // TODO: Not necessary
+  border-style: solid;
+  border-width: 3px;
+}
+
+.topbar a {
+  color: #fefefe;
+  font-size: 120%; // or 14px * 1.2
 }
 
 .topbar a:hover {
-    color: #ff0000;
-}
-
-.mainheading {
-  
-}
-
-.subheading {
-    
+  border-bottom: 3px solid #ff0000;
 }
 
 .newsheading {
-    position: absolute; top: 0;
+  position: absolute;
+  top: 0;
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
+  display: flex;
+  padding: 0 4px;
+}
 
-  .column {
-    flex: 33.33%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-  }  
+.row div {
+  border: 2px solid black;
+}
 
-.sidebar {
-        height: 100%;
-        width: 150px;
-        position: absolute; 
-        right: 0;
-        top: 0;
-        padding-top: 200px;
+.row img {
+  width: 100px;
+  height: auto;
 }
 
 .news {
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
+  margin-bottom: 15px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.left-sidebar {
+  width: 60%;
+}
+
+.right-sidebar {
+  margin-left: 20px;
+  width: 40%;
+}
+
+.date {
+  margin-bottom: 15px;
+}
+
+.container {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
